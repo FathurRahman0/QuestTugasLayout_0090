@@ -27,3 +27,16 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+
+data class Mahasiswa(
+    @StringRes val nama: Int,
+    @StringRes val alamat: Int,
+    @ColorRes val warnaCard: Int,
+    @ColorRes val warnaNama: Int,
+    @ColorRes val warnaAlamat: Int,
+    @StringRes val noHp: Int? = null,
+    @ColorRes val warnaNoHp: Int = R.color.cyan_hp,
+    val fontNama: FontFamily = FontFamily.Default,
+    val bobotNama: FontWeight = FontWeight.Bold,
+    val ukuranNama: Int = R.dimen.teks_nama
+)
