@@ -80,3 +80,59 @@ private val daftarMahasiswa = listOf(
         warnaNoHp = R.color.cyan_hp
     )
 )
+
+@Composable
+fun KartuMahasiswa(data: Mahasiswa, modifier: Modifier = Modifier) {
+    Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(
+                horizontal = dimensionResource(R.dimen.padding_card_luar),
+                vertical = dimensionResource(R.dimen.jarak_kecil)
+            ),
+        shape = RoundedCornerShape(dimensionResource(R.dimen.radius_card)),
+        colors = CardDefaults.cardColors(
+            containerColor = colorResource(data.warnaCard)
+        )
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            LogoKartu()
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = stringResource(data.nama),
+                    fontSize = androidx.compose.ui.unit.TextUnit(
+                        dimensionResource(data.ukuranNama).value,
+                        androidx.compose.ui.unit.TextUnitType.Sp
+                    ),
+                    fontFamily = data.fontNama,
+                    fontWeight = data.bobotNama,
+                    color = colorResource(data.warnaNama)
+                )
+                data.noHp?.let {
+                    Text(
+                        text = stringResource(it),
+                        fontSize = dimensionResource(R.dimen.teks_info).value.let {
+                            androidx.compose.ui.unit.TextUnit(it, androidx.compose.ui.unit.TextUnitType.Sp)
+                        },
+                        color = colorResource(data.warnaNoHp)
+                    )
+                }
+                Text(
+                    text = stringResource(data.alamat),
+                    fontSize = dimensionResource(R.dimen.teks_info).value.let {
+                        androidx.compose.ui.unit.TextUnit(it, androidx.compose.ui.unit.TextUnitType.Sp)
+                    },
+                    color = colorResource(data.warnaAlamat)
+                )
+            }
+            LogoKartu()
+        }
+    }
+}
