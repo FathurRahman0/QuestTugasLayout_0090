@@ -2,10 +2,10 @@
 <resources>
     <dimen name="padding_atas">48dp</dimen>
     <dimen name="padding_card_luar">12dp</dimen>
-    <dimen name="padding_logo">5dp</dimen>
+    <dimen name="padding_logo">10dp</dimen>
     <dimen name="jarak_kecil">4dp</dimen>
     <dimen name="jarak_judul">24dp</dimen>
-    <dimen name="ukuran_logo">64dp</dimen>
+    <dimen name="ukuran_logo">72dp</dimen>
     <dimen name="radius_card">12dp</dimen>
 
     <dimen name="teks_judul">26sp</dimen>
