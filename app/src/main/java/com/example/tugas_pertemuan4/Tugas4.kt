@@ -52,3 +52,12 @@ private val daftarMahasiswa = listOf(
         bobotNama = FontWeight.Normal,
         ukuranNama = R.dimen.teks_nama_cursive
     ),
+    Mahasiswa(
+        nama = R.string.nama_1,
+        alamat = R.string.alamat_1,
+        warnaCard = R.color.card_1_bg,
+        warnaNama = R.color.putih,
+        warnaAlamat = R.color.kuning,
+        noHp = R.string.no_hp,
+        warnaNoHp = R.color.biru_hp
+    ),
