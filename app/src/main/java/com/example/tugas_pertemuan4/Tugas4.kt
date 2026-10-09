@@ -136,3 +136,14 @@ fun KartuMahasiswa(data: Mahasiswa, modifier: Modifier = Modifier) {
         }
     }
 }
+
+@Composable
+private fun LogoKartu() {
+    Image(
+        painter = painterResource(R.drawable.logo_umy),
+        contentDescription = null,
+        modifier = Modifier
+            .padding(dimensionResource(R.dimen.padding_logo))
+            .size(dimensionResource(R.dimen.ukuran_logo))
+    )
+}
