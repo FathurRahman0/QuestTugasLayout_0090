@@ -70,3 +70,13 @@ private val daftarMahasiswa = listOf(
         noHp = R.string.no_hp,
         warnaNoHp = R.color.biru_hp
     ),
+    Mahasiswa(
+        nama = R.string.nama_3,
+        alamat = R.string.alamat_3,
+        warnaCard = R.color.card_3_bg,
+        warnaNama = R.color.putih,
+        warnaAlamat = R.color.putih,
+        noHp = R.string.no_hp,
+        warnaNoHp = R.color.cyan_hp
+    )
+)
