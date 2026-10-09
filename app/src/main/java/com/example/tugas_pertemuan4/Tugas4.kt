@@ -147,3 +147,45 @@ private fun LogoKartu() {
             .size(dimensionResource(R.dimen.ukuran_logo))
     )
 }
+@Composable
+fun ActivitasPertama(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(top = dimensionResource(R.dimen.padding_atas)),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = stringResource(R.string.prodi),
+            fontSize = androidx.compose.ui.unit.TextUnit(
+                dimensionResource(R.dimen.teks_judul).value,
+                androidx.compose.ui.unit.TextUnitType.Sp
+            ),
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = stringResource(R.string.univ),
+            fontSize = androidx.compose.ui.unit.TextUnit(
+                dimensionResource(R.dimen.teks_subjudul).value,
+                androidx.compose.ui.unit.TextUnitType.Sp
+            ),
+            fontWeight = FontWeight.Bold
+        )
+        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.jarak_judul)))
+
+        LazyColumn(modifier = Modifier.weight(1f)) {
+            items(daftarMahasiswa) { mhs ->
+                KartuMahasiswa(data = mhs)
+            }
+        }
+
+        Text(
+            text = stringResource(R.string.copy),
+            fontSize = androidx.compose.ui.unit.TextUnit(
+                dimensionResource(R.dimen.teks_copy).value,
+                androidx.compose.ui.unit.TextUnitType.Sp
+            ),
+            modifier = Modifier.padding(vertical = dimensionResource(R.dimen.padding_card_luar))
+        )
+    }
+}
