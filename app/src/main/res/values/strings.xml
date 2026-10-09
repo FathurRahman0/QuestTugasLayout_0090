@@ -4,6 +4,8 @@
     <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
     <string name="copy">Copyright, 2026</string>
 
+    <string name="no_hp">085436874190</string>
+
     <string name="nama_0">Bambang Sumantri</string>
     <string name="alamat_0">Turi, Sleman</string>
 
@@ -12,5 +14,8 @@
 
     <string name="nama_2">Zhilal Fadhilah</string>
     <string name="alamat_2">Depok, Sleman</string>
+
+    <string name="nama_3">Ahmad Alfian</string>
+    <string name="alamat_3">Gamping, Sleman</string>
 
 </resources>
