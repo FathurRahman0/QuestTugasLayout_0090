@@ -40,3 +40,15 @@ data class Mahasiswa(
     val bobotNama: FontWeight = FontWeight.Bold,
     val ukuranNama: Int = R.dimen.teks_nama
 )
+
+private val daftarMahasiswa = listOf(
+    Mahasiswa(
+        nama = R.string.nama_0,
+        alamat = R.string.alamat_0,
+        warnaCard = R.color.card_0_bg,
+        warnaNama = R.color.putih,
+        warnaAlamat = R.color.kuning,
+        fontNama = FontFamily.Cursive,
+        bobotNama = FontWeight.Normal,
+        ukuranNama = R.dimen.teks_nama_cursive
+    ),
