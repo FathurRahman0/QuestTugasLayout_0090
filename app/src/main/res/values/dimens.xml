@@ -8,4 +8,10 @@
     <dimen name="ukuran_logo">64dp</dimen>
     <dimen name="radius_card">12dp</dimen>
 
+    <dimen name="teks_judul">26sp</dimen>
+    <dimen name="teks_subjudul">15sp</dimen>
+    <dimen name="teks_nama">20sp</dimen>
+    <dimen name="teks_nama_cursive">22sp</dimen>
+    <dimen name="teks_info">14sp</dimen>
+    <dimen name="teks_copy">12sp</dimen>
 </resources>
